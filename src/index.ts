@@ -32,6 +32,10 @@ const server = app.listen(8000, function () {
     console.log("Listening on port http://localhost:8000");
 });
 
+app.get('/' , (req,res) => {
+    res.send('Hello World')
+});
+
 app.post('/user/save' , (req,res) => {
     utenteCtrl.save(req,res,connection);
 });
