@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index.js",
-    "heroku-postbuild": "ng build --prod"
+    "start": "node dist/index.js"
   },
   "author": "",
   "license": "ISC",
