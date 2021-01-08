@@ -26,7 +26,7 @@ connection.connect((err) => {
     }
     console.log("Mysql Connected ...");
 });
-const server = app.listen(8000, function () {
+const server = app.listen(process.env.PORT || 8000, function () {
     console.log("Listening on port http://localhost:8000");
 });
 app.get('/', (req, res) => {
